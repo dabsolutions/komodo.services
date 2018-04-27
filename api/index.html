@@ -65,155 +65,21 @@
         <div class="col-lg-12 text-center">
           <h1 class="mt-5">API's for Komodo!</h1>
           <p class="lead">Build apps for Komodo using existing API's.</p>
-          <h2 class="mt-5"><u>Insight API</u></h2>
           
-          <h4 class="mt-5">Block</h4>
-          <ul class="list-unstyled">
-            <li>/api/block/[:hash]</li>
-            <li><a href= "https://explorer.komodo.services/api/block/0000000550b01cf54d6ea9e8e64a17758f323e7719b37e24bb22905cde6b9fb4" target="_blank">/api/block/0000000550b01cf54d6ea9e8e64a17758f323e7719b37e24bb22905cde6b9fb4</a></li>
-          </ul>
+          <h4 class="mt-5"><a href= "insight/index.html" >Insight API</a></h4>
+          <p class="lead">Accessible through <a href= "https://explorer.komodo.services" target="_blank">explorer.komodo.services/api</a> and other insight explorers.</p>
           
-          <h4 class="mt-5">Block Index</h4>
-          <ul class="list-unstyled">
-            <li>/api/block-index/[:height]</li>
-            <li><a href= "https://explorer.komodo.services/api/block-index/777" target="_blank">/api/block-index/777</a></li>
-            <li>Returned is: {"blockHash":"039a374f5281b8084a4e364c71d74d8380000661b0c52a0fa462421dba7ecc49"}</li>
-          </ul>
+          <h4 class="mt-5"><a href= "komodod_rpc/index.html" >Komodod RPC</a></h4>
+          <p class="lead">Accessible through any <a href= "https://github.com/jl777/komodo" target="_blank">komodod</a> node running locally or with access to a one thats hosted.</p>
           
-          <h4 class="mt-5">Raw Block</h4>
-          <ul class="list-unstyled">
-            <li>/api/rawblock/[:blockHash]</li>
-            <li>/api/rawblock/[:blockHeight]</li>
-            <li><a href= "https://explorer.komodo.services/api/rawblock/0000000550b01cf54d6ea9e8e64a17758f323e7719b37e24bb22905cde6b9fb4" target="_blank">/api/rawblock/0000000550b01cf54d6ea9e8e64a17758f323e7719b37e24bb22905cde6b9fb4</a></li></li>
-            <li>Returned is: {"rawblock":"blockhexstring..."} </li>
-          </ul>
+          <!--
+          <h4 class="mt-5">Iguana API</h4>
+          <p class="lead">To Do... by me or a PR</p>
           
-          <h4 class="mt-5">Block Summaries</h4>
-          <ul class="list-unstyled">
-            <li>Get block summaries by date:</li>
-            <li><a href= "https://explorer.komodo.services/api/blocks?limit=3&blockDate=2017-04-20" target="_blank">/api/blocks?limit=3&blockDate=2017-04-20</a></li>
-            <li>Returned is: {"blocks":[{"height":285797,"size":1750,"hash":"01200cc5b9f49d76fef8d49c21e400c91cdc2151bc79d46578b7ef1355865669","time":1492732752,"txlength":1,"poolInfo":{}},{"height":285796,"size":1583,"hash":"00003c6d7a327e33156e355be0071a069a2122f5c97a06b98b93f2c059ecc718","time":1492732733,"txlength":1,"poolInfo":{}},{"height":285795,"size":1815,"hash":"0892d0bff204f42b98b1318072971c469241edfe36730fcfb9e85f7ac3d85be0","time":1492732732,"txlength":2,"poolInfo":{}}],"length":3,"pagination":{"next":"2017-04-21","prev":"2017-04-19","currentTs":1492732799,"current":"2017-04-20","isToday":false,"more":true,"moreTs":1492732800}}</li>
-          </ul>
+          <h4 class="mt-5">MarketMaker API</h4>
+          <p class="lead">To Do... by me or a PR</p>
+          -->
           
-          <h4 class="mt-5">Transaction</h4>
-          <ul class="list-unstyled">
-            <li>/api/tx/[:txid]</li>
-            <li><a href= "https://explorer.komodo.services/api/tx/6c14947798038ac3ee944afb0130ae198273560e6eeb1cc235da100902f7ded6" target="_blank">/api/tx/6c14947798038ac3ee944afb0130ae198273560e6eeb1cc235da100902f7ded6</a></li>
-            <li>/api/rawtx/[:rawid]</li>
-            <li><a href= "https://explorer.komodo.services/api/rawtx/6c14947798038ac3ee944afb0130ae198273560e6eeb1cc235da100902f7ded6" target="_blank">/api/rawtx/6c14947798038ac3ee944afb0130ae198273560e6eeb1cc235da100902f7ded6</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Address</h4>
-          <ul class="list-unstyled">
-            <li>/api/addr/[:addr][?noTxList=1][&from=&to=]</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB?noTxList=1" target="_blank">/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB?noTxList=1</a></li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB?from=1000&to=2000" target="_blank">/aapi/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB?from=1000&to=2000</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Address Properties</h4>
-          <ul class="list-unstyled">
-            <li>/api/addr/[:addr]/balance</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/balance" target="_blank">/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/balance</a></li>
-            <li>/api/addr/[:addr]/totalReceived</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/totalReceived" target="_blank">/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/totalReceived</a></li>
-            <li>/api/addr/[:addr]/totalSent</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/totalSent" target="_blank">/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/totalSent</a></li>
-            <li>/addr/[:addr]/unconfirmedBalance</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/unconfirmedBalance" target="_blank">/api/addr/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/unconfirmedBalance</a></li>
-            <li>The response contains the value in Satoshis.</li>
-          </ul>
-          
-          <h4 class="mt-5">Unspent Outputs</h4>
-          <ul class="list-unstyled">
-            <li>/api/addr/[:addr]/utxo</li>
-            <li><a href= "https://explorer.komodo.services/api/addr/RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x/utxo" target="_blank">/api/addr/RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x/utxo</a></li>
-            <li>Returned is: [{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"d5c6419d2eaccb18716adc5691b68c4ad536786ff47bdf764cf386d940b0c98a","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":149,"satoshis":14900000000,"height":809459,"confirmations":404},{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"ce5f7128af2130f6736db854358026ea571832d15006178c44aef657ac55393b","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":285,"satoshis":28500000000,"height":805747,"confirmations":4116},{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"a8d3a9c30a86527a4835122d99c918dc6c9943bcb40b9edf029933828622a076","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":50,"satoshis":5000000000,"height":801142,"confirmations":8721},{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"291dd39cdf69ef1555a1f2c2bd8e853afe871fa44cf44917c5b51865525defcb","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":120,"satoshis":12000000000,"height":798637,"confirmations":11226},{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"d80ea4d2b3dd7cb5b9f916a16fcd9a8bf39a5fa3b99c7ac8bc1a13d9abc5a896","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":60,"satoshis":6000000000,"height":791665,"confirmations":18198},{"address":"RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x","txid":"3ed7347c5b0b38f3b9149041288eab50c63e3afd1e6cbd65009844e51f0fddd6","vout":1,"scriptPubKey":"76a914c28e4cd192c949a19926f0c428b3434dbc855f0188ac","amount":5,"satoshis":500000000,"height":718001,"confirmations":91862}]</li>
-          </ul>
-          
-          <h4 class="mt-5">Unspent Outputs for Multiple Addresses</h4>
-          <ul class="list-unstyled">
-            <li>GET method:</li>
-            <li>/api/addrs/[:addrs]/utxo</li>
-            <li><a href= "https://explorer.komodo.services/api/addrs/RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x, RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/utxo" target="_blank">/api/addrs/RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x, RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB/utxo</a></li>
-            <li>POST method:</li>
-            <li>/api/addrs/utxo</li>
-            <li>POST params:</li>
-            <li>addrs: RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x,RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB</li>
-          </ul>
-          
-          <h4 class="mt-5">Transactions by Block</h4>
-          <ul class="list-unstyled">
-            <li>/api/txs/?block=[:blockHash]</li>
-            <li><a href= "https://explorer.komodo.services/api/txs/?block=01a652dd4a6004b65776747bd6852290985404d4c2905a3c03920d16a411f90b" target="_blank">/api/txs/?block=01a652dd4a6004b65776747bd6852290985404d4c2905a3c03920d16a411f90b</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Transactions by Address</h4>
-          <ul class="list-unstyled">
-            <li>/api/txs/?address=[:addr]</li>
-            <li><a href= "https://explorer.komodo.services/api/txs/?address=RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB" target="_blank">/api/txs/?address=RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Transactions for Multiple Addresses</h4>
-          <ul class="list-unstyled">
-            <li>GET method:</li>
-            <li>/api/addrs/[:addrs]/txs[?from=&to=]</li>
-            <li><a href= "https://explorer.komodo.services/api/addrs/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB,RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x/txs?from=0&to=20" target="_blank">/api/addrs/RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB,RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x/txs?from=0&to=20</a></li>
-            <li>POST method:</li>
-            <li>/api/addrs/txs</li>
-            <li>POST params:</li>
-            <li>addrs: RLQoAcs1RaqW1xfN2NJwoZWW5twexPhuGB,RT1uduwTqpuyfzDnzyfxNADTwxstXR7s8x</li>
-            <li>from (optional): 0</li>
-            <li>to (optional): 20</li>
-            <li>noAsm (optional): 1 (will omit script asm from results)</li>
-            <li>noScriptSig (optional): 1 (will omit the scriptSig from all inputs)</li>
-            <li>noSpent (option): 1 (will omit spent information per output)</li>
-            <li>Note: if pagination params are not specified, the result is an array of transactions.</li>
-          </ul>
-          
-          <h4 class="mt-5">Transaction Broadcasting</h4>
-          <ul class="list-unstyled">
-            <li>POST method:</li>
-            <li>/api/tx/send</li>
-            <li>POST params:</li>
-            <li>rawtx: "signed transaction as hex string"</li>
-            <li>ex:</li>
-            <li>rawtx: 01000000017b1eabe0209b1fe794124575ef807057c77ada2138ae4fa8d6c4de0398a14f3f00000000494830450221008949f0cb400094ad2b5eb399d59d01c14d73d8fe6e96df1a7150deb388ab8935022079656090d7f6bac4c9a94e0aad311a4268e082a725f8aeae0573fb12ff866a5f01ffffffff01f0ca052a010000001976a914cbc20a7664f2f69e5355aa427045bc15e7c6c77288ac00000000</li>
-            <li>POST response:</li>
-            <li>{txid: [:txid]}</li>
-            <li>ex:</li>
-            <li>{txid: "4acec6fd027769b6253684c446d368080a340a997c7c4f182520c9fa986fbb0e"}</li>
-          </ul>
-          
-          <h4 class="mt-5">Blockchain Data Sync Status</h4>
-          <ul class="list-unstyled">
-            <li>/api/sync</li>
-            <li><a href= "https://explorer.komodo.services/api/sync" target="_blank">explorer.komodo.services/api/sync</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Live Network P2P Data Sync Status</h4>
-          <ul class="list-unstyled">
-            <li>/api/peer</li>
-            <li><a href= "https://explorer.komodo.services/api/peer" target="_blank">explorer.komodo.services/api/peer</a></li>
-          </ul>
-          
-          <h4 class="mt-5">Status of the Komodo Network</h4>
-          <ul class="list-unstyled">
-            <li>/api/status?q=xxx</li>
-            <li>Where "xxx" can be:</li>
-            <li>getInfo</li>
-            <li><a href= "https://explorer.komodo.services/api/status?q=getInfo" target="_blank">explorer.komodo.services/api/status?q=getInfo</a></li>
-            <li>getDifficulty</li>
-            <li><a href= "https://explorer.komodo.services/api/status?q=getDifficulty" target="_blank">explorer.komodo.services/api/status?q=getDifficulty</a></li>
-            <li>getBestBlockHash</li>
-            <li><a href= "https://explorer.komodo.services/api/status?q=getBestBlockHash" target="_blank">explorer.komodo.services/api/status?q=getBestBlockHash</a></li>
-            <li>getLastBlockHash</li>
-            <li><a href= "https://explorer.komodo.services/api/status?q=getLastBlockHash" target="_blank">explorer.komodo.services/api/status?q=getLastBlockHash</a></li>
-          </ul>
-          
-          <br>
-          
-          <p>All of this Insight API information is from : <a href= "https://github.com/bitpay/insight-api" target="_blank">https://github.com/bitpay/insight-api</a></p>
-        
         </div>
       </div>
     </div>
