@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mined By | Komodo Services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../">Komodo Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../101">101</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../api">API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Mined By</h1>
+          <p class="lead">Blocks "Mined by" on <a href="https://explorer.komodo.services" target="_blank">explorer.komodo.services</a></p>
+          
+	  <h4 class="mt-5">Change your pool signature</h4>
+          <p class="lead">With kmd-nomp or z-nomp you need to change your signature.</p>
+          <p class="lead">Open the file: <code>/kmd-nomp/node_modules/stratum-pool/lib/transactions.js</code></p>
+	  <p class="lead">Now find: <code>Buffer('4b4d442d4e4f4d50212068747470733a2f2f6769746875622e636f6d2f6b6f6d6f646f73657276696365732f6b6d642d6e6f6d70', 'hex')]) //KMD-NOMP! https://github.com/komodoservices/kmd-nomp</code></p>
+	  <p class="lead">Encode a HEX string with your name or the name of your pool and/or the URL and change the above line.</p>
+	  <p class="lead">Follow this format: <code>YourPoolName https://your.mining.pool</code></p>
+          
+	  <h4 class="mt-5">Submit your HEX string</h4>
+          <p class="lead">After finishing the above, you need to submit your HEX so we can include it on our explorer.</p>
+	  <p class="lead">Create a pull request here: <a href="https://github.com/komodoservices/insight-api-komodo/blob/master/pools.json" target="_blank" title="pools.json">komodoservices/insight-api-komodo</a></p>
+	  <p class="lead">or message @xRobeSx on Komodo Discord.</p>
+		
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Komodo Services 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
